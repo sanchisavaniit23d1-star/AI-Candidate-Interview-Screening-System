@@ -1,0 +1,30 @@
+:root { --green: #2f5d50; --red: #c00000; --bg: #f1f3ee; --line: #c9cfc2; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: #1a1a1a; font-family: "Segoe UI", system-ui, sans-serif; }
+.page { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+header h1 { margin: 0 0 4px; font-family: "Times New Roman", serif; }
+.muted { color: #6b7280; margin: 0; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; margin: 16px 0; }
+.card h2 { font-size: 18px; margin: 0 0 12px; }
+button { background: var(--green); color: #fff; border: 0; border-radius: 6px; padding: 8px 16px; margin-left: 10px; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: default; }
+button.link { background: none; color: var(--green); padding: 0; margin: 0 8px; text-decoration: underline; }
+button.link.danger { color: var(--red); }
+.progress { margin-top: 14px; }
+.bar { height: 10px; background: #e5e7e0; border-radius: 5px; overflow: hidden; }
+.bar div { height: 100%; background: var(--green); transition: width 0.4s; }
+.error { color: var(--red); font-weight: 600; }
+.warn { background: #fff4e0; border: 1px solid #e8b04b; padding: 4px 12px; border-radius: 6px; margin-bottom: 12px; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.metrics div { background: var(--bg); border-radius: 8px; padding: 10px 12px; }
+.metrics span { display: block; font-size: 12px; color: #6b7280; }
+.metrics b { font-size: 20px; text-transform: capitalize; }
+.scroll { overflow-x: auto; max-height: 360px; overflow-y: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+th { background: var(--green); color: #fff; position: sticky; top: 0; }
+.history { list-style: none; padding: 0; margin: 0; }
+.history li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; background: #e5e7e0; }
+.badge.done { background: #d6ead9; } .badge.failed { background: #f6d5d5; }
+.disclaimer { font-size: 12px; color: #6b7280; }
