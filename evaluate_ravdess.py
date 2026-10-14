@@ -12,7 +12,7 @@ from sklearn.metrics import (
     confusion_matrix,
 )
 
-from interview_analyzer_old import (
+from interview_analyzer import (
     load_model,
     extract_audio,
     prepare_faces,
