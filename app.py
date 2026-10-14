@@ -5,7 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import streamlit as st
 
-from interview_analyzer_old import analyze_interview
+from interview_analyzer import analyze_interview
 
 
 ANALYSIS_CACHE_DIR = os.path.join("uploads", "analysis_cache")
